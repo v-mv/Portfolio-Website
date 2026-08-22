@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Mohit Vaidya — Computational Physics Researcher</title>
+    <meta name="description" content="Portfolio of Mohit Vaidya, a computational physics researcher and scientific programmer working across numerical methods, RF systems, and precision instrumentation." />
+    <meta name="theme-color" content="#0c0f10" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("mohit-portfolio-theme");
+        const requestedTheme = new URLSearchParams(window.location.search).get("theme");
+        const activeTheme = requestedTheme === "light" || requestedTheme === "dark" ? requestedTheme : savedTheme === "light" ? "light" : "dark";
+        document.documentElement.dataset.theme = activeTheme;
+        document.documentElement.style.colorScheme = activeTheme;
+      } catch (_) {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/assets/mohit-mark.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+
+</html>
